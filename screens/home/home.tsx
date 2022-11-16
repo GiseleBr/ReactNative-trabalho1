@@ -1,13 +1,14 @@
-import { Text, View, TouchableOpacity, Image, ImageComponent } from "react-native";
+import React from "react";
+import { Text, View, TouchableOpacity, Image, ScrollView } from "react-native";
 import { styles } from "./style";
 import { Ionicons } from "@expo/vector-icons";
 
-import Logo from "./assets/img/logo2.png";
+import Logo from "../../assets/img/logo2.png";
 
-export default function Home() {
+export function Home() {
+
   return (
-      <View style={styles.container}>
-
+    <View style={styles.container}>
       <View style={styles.buttonHeader}>
         <Image source={Logo} style={{ height: 70, width: 100 }} />
 
@@ -21,6 +22,28 @@ export default function Home() {
           </TouchableOpacity>
         </View>
       </View>
+
+      <View>
+
+      <View style={styles.categoriaContainer} >
+        <Text lineBreakMode="head" numberOfLines={2} style={styles.categoriaTitulo}>
+            Intensivo de psicologia e psicanálise
+        </Text>
+        
+        <Text style={styles.categoriaLink}>
+            (10 cursos)
+        </Text>
+        
+        <Text style={styles.categoriaLink}>
+            ver todos
+        </Text>
+        </View>
+        
+      <ScrollView horizontal>
+      </ScrollView>
+      
       </View>
+
+    </View>
   );
 }

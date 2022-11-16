@@ -42,8 +42,30 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    image: {
+    categoriaTitulo: {
+        color: '#FFFFF0',
+        fontSize: 20,
+        fontWeight: 'bold',
+        marginBottom: 2,
+        width: '30%',
         
-    }
+    },
 
+    categoriaLink: {
+        color: '#FFFFF0',
+        fontSize: 16,
+        marginBottom: 2,
+        width: '30%',
+        textDecorationLine: 'underline',
+        
+    },
+
+    categoriaContainer: {
+        marginTop: '10',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '115%', 
+
+    }
 })

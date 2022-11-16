@@ -1,8 +1,9 @@
+import React from 'react';
 import { Text, View, TextInput, TouchableOpacity } from 'react-native';
 import { styles } from './style';
 import { Ionicons } from '@expo/vector-icons';
 
-export default function Login() {
+export function Login() {
   
   return (
     <View style={styles.container}>

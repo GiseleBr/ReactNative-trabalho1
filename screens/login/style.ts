@@ -39,7 +39,7 @@ export const styles = StyleSheet.create({
         backgroundColor:'#000000',
         color: '#FFFFF0',
         height: 70,
-        fontSize: 10,
+        fontSize: 15,
         marginBottom: 20,
         padding: Platform.OS === 'ios' ? 15 : 10,
         borderRadius: 7
